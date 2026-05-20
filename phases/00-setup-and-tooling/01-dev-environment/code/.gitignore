@@ -1,0 +1,4 @@
+# Model checkpoints (ML / AI files)
+*.pt
+*.pth
+*.safetensors
