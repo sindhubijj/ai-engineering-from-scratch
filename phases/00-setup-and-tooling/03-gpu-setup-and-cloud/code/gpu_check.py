@@ -1,3 +1,4 @@
+#On Google Colab
 import time
 import sys
 
