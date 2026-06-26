@@ -27,7 +27,7 @@ def load_and_inspect(dataset_name: str, config: str = None, split: str = "train"
     if split:
         kwargs["split"] = split
 
-    ds = load_dataset(**kwargs)
+    # ds = load_dataset(**kwargs)
     print(f"Dataset: {dataset_name}")
     print(f"  Split: {split}")
     print(f"  Rows: {len(ds)}")
@@ -36,8 +36,7 @@ def load_and_inspect(dataset_name: str, config: str = None, split: str = "train"
     print(f"  First row: {ds[0]}")
     return ds
 
-
-def stream_dataset(dataset_name: str, config: str = None, max_rows: int = 5):
+    # def stream_dataset(dataset_name: str, config: str = None, max_rows: int = 5):
     kwargs = {"path": dataset_name, "split": "train", "streaming": True}
     if config:
         kwargs["name"] = config
