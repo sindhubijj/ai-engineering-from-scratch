@@ -1,10 +1,32 @@
-*.pt
-*.pth
-*.safetensors
-.env 
+#JS/TS Build Artifacts
 *.js
 *.js.map
 *.d.ts
 *.d.ts.map
 
+#Python
+__pycache__/
+*.pyc
+
+#Virtual Environments 
+.venv/
+fresh_env/
+venv/
+
+#Jupyter
+.ipynb_checkpoints/
+
+#Environment Variables
+.env
+
+#ML Artifacts
+models/
+data/
+*.csv
+*.parquet
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
 
